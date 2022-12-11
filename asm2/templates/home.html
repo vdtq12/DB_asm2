@@ -4,22 +4,102 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Log in<input type="text"></title>
+    <title>Complete Responsive Website Design Tutorial</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 </head>
 <body>
 
-    {% with messages = get_flashed_messages() %}
-        {% for m in messages %} 
-            <p> {{ m }}</p>
-        {% endfor %} 
-    {% endwith %} 
-    
-    <div>
-        <form action="" method="post">
-            <label for="name">Name</label>
-            <input type="text" name="name" placeholder="Enter your name" value="{{name if name}}">
-            <button type="submit">Submit</button>
-        </form>
+<header>
+
+    <div class="header">
+
+        <div class="logo">
+            <img src="image/logoBK.png" alt="" width="80px" height="70px">
+        </div>
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#faculty">Faculty</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
     </div>
-</body>
-</html>
+
+    <div class="img">
+        <img src="image/bk.png" alt="" width="100%" height="700px" />
+    </div>
+
+    <section class="about" id="about">
+
+        <h1 class="heading"> <span>about</span> us </h1>
+        
+        <div class="h0">
+            <div class="h1">
+                <div class="h2">
+                    1776
+                </div>
+                <div class="h3">
+                    Undergraduates and Graduates.
+                </div>
+            </div>
+
+            <div class="h1">
+                <div class="h2">
+                    739
+                </div>
+                <div class="h3">
+                    On studying students.
+                </div>
+            </div>
+
+            <div class="h1">
+                <div class="h2">
+                    143
+                </div>
+                <div class="h3">
+                    Undergraduates Master's sudents.
+                </div>
+            </div>
+
+            <div class="h1">
+                <div class="h2">
+                    25
+                </div>
+                <div class="h3">
+                    PhD student.
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="faculty" id="faculty">
+        <h1 class="heading"> <span>Faculty</span> </h1>
+
+        <div class="f0">
+
+            <div class="f2">
+                <div class="h2">
+                    11
+                </div>
+                <div class="h3">
+                    Student's faculty.
+                </div>
+            </div>
+
+            <div class="f1">
+                More information about Faculty:
+                <i class='fas fa-address-book' style='font-size:28px;'></i>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h1 class="heading"> <span>Contact</span> </h1>
+    </section>
+
+</header>
