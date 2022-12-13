@@ -105,3 +105,11 @@ body {
     transform-origin: center;
     transform-style: preserve-3d;
 }
+
+.h1 {
+    justify-content: space-between;
+}
+
+.CSE {
+    padding-top: 120px;
+}
