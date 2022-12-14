@@ -61,6 +61,7 @@ html {
 }
 
 body {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -69,7 +70,8 @@ body {
 }
 
 .box {
-    margin-top: -30vh;
+    margin-left: 35%;
+    margin-top: 20%;
     position: relative;
     width: 200px;
     height: 150px;
@@ -107,9 +109,41 @@ body {
 }
 
 .h1 {
-    justify-content: space-between;
+    /*justify-content: space-between;*/
+    justify-content: baseline;
 }
 
-.CSE {
+.Faculty {
+    width: 100%;
     padding-top: 120px;
+    color: rgb(249, 241, 241);
+    cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-between;
+    margin: 0;
 }
+
+.left :hover {
+    color: #666;
+}
+
+.right :hover {
+    color: #666;
+}
+
+.left, .right {
+    width: 150%;
+    justify-content: center;
+}
+
+.right {
+    margin-left: 50%;
+}
+
+.left {
+    margin-left: 0;
+}
+
+
