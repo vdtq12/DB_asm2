@@ -1,5 +1,5 @@
 # DB_asm2
-This is report from group 3, about school management system.
+This is report from group 3, about school management system.  
 If you have any question, please contact me via email: quyen.vu12@hcmut.edu.vn
 ---------------------------------------------------------------------
 Application running:  
