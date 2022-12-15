@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Can_borrow List</title>
+    <!-- CSS only -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;600;700;800;900&family=Inter:wght@100;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/static/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/1c066e88f1.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="container-fluid m-0 p-0">
+      <div class="row m-0">
+        <div class="col-2 p-0">
+          <nav class="sidenav pt-4">
+
+            <ul class="list-unstyled sidenav-list">
+              <li>
+                <a href="{{ url_for('faculty')}}">
+                  <span>Faculties</span>
+                </a>
+              </li>
+              <li>
+                <a href="{{ url_for('department')}}">
+                  <span>Departments</span>
+                </a>
+              </li>
+              <li>
+                <a href="{{ url_for('lecturer')}}">
+                  <span>Lecturers</span>
+                </a>
+              </li>
+              <li>
+                <a href="{{ url_for('student')}}">
+                  <span>Students</span>
+                </a>
+              </li>
+              <li>
+                <a href="{{ url_for('subject')}}">
+                  <span>Subjects</span>
+                </a>
+              </li>
+              <li>
+                <a href="{{ url_for('def_class')}}">
+                  <span>Classes</span>
+                </a>
+              </li>
+              <li>
+                <a href="{{ url_for('def_enroll_in')}}">
+                  <span>Enroll_in</span>
+                </a>
+              </li>
+              <li>
+                <a href="{{ url_for('project')}}">
+                  <span>Projects</span>
+                </a>
+              </li>
+              <li>
+                <a href="{{ url_for('def_guide')}}">
+                  <span>Guide</span>
+                </a>
+              </li>
+              <li>
+                <a href="{{ url_for('def_participate_in')}}">
+                  <span>Participate_in</span>
+                </a>
+              </li>
+              <li>
+                <a href="{{ url_for('library')}}">
+                  <span>Libraries</span>
+                </a>
+              </li>
+              <li>
+                <a href="{{ url_for('book')}}">
+                  <span>Books</span>
+                </a>
+              </li>
+              <li class="active">
+                <a href="{{ url_for('def_can_borrow')}}">
+                  <span>Can_borrow</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="content col p-0 overflow-hidden">
+          <header id="header">
+            <h1>Faculties List</h1>
+          </header>
+          <main>
+            <div class="border border-light text-center m-5">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">BOOK_ID</th>
+                    <th scope="col">STU_ID</th>
+                  </tr>
+                </thead>
+                <tbody class="" id="table-mcp">
+                  {% for r in results %}
+                    <tr>
+                      <td> {{ r.book_ID }} </td>
+                      <td> {{ r.stu_ID }} </td>
+                    </tr>
+                  {% endfor %}
+                </tbody>
+              </table>
+            </div>
+            <div class="content-table mt-3 col">
+              
+            </div>
+          </main>
+        </div>
+
+        
+
+      </div>
+    </div>
+    <!-- <script src="../js/constants/vehicles.js" type="module"></script> -->
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
